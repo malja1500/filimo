@@ -1,0 +1,383 @@
+  html{
+    scroll-behavior: smooth;
+  }
+  
+  body{
+      margin:0;
+      font-size: 16px;
+      font-family:sans;
+      direction:rtl;
+  }
+  
+  #header {
+      border:1px solid #eee;
+  }
+  
+  /* #header > .ad{
+      height:50px;
+      background:url("../images/up.jpg") no-repeat 100% 50%;
+      background-size:100%;
+      
+  } */
+  #header > .main {
+      /* display: flex; */
+      /* flex-flow: row wrap; */
+      /* justify-content:center; */
+      background-color: rgb(174, 128, 119);
+  }
+  
+  #header > .main > .top,
+  #header > .main > .bottom{
+      display: flex;
+      flex-flow: reverse nowrap;
+      //border:1px solid #eee;
+  
+      justify-content:center;
+      //align-items:flex-start;
+      height:52px;
+      //gap:3px;
+      position:relative;
+  }
+  
+  #header > .main > .top > div{
+      width: 120px;
+      /* border-right:1px solid #eee; */
+        /* background-color:currentColor ; */
+  }
+  #header > .main > .top > .logo {
+      width: 170px;
+      background:url("../images/filimo1.webp") no-repeat 100% 50%;
+      background-size:70%;
+      margin-right: 20px;
+      /* background-color: currentColor; */
+  }
+  
+  #header > .main > .top > .search {
+      width: 800px;
+      padding-right:35px;
+      direction:rtl;
+      position:relative;
+      /* background-color: currentColor; */
+  }
+  
+  #header > .main > .top > .search > input {
+      border:0 none;
+      background:rgb(176, 92, 92);
+      border-radius:20px;
+      margin:7px;
+      padding:10px 60px 10px 0;
+      width:10%;
+      display:block;
+      color: aliceblue;
+      position: absolute;
+      top: 0px;
+      left: -5px;
+
+      /* outline:2px solid orange; */
+  }
+  #header > .main > .top > .search:before{
+      content:"";
+      position:absolute;
+      left:95px;
+      padding:25px;
+      background:url("../images/search.png") no-repeat 50%;
+    z-index: 999;
+    }
+  #header > .main > .top > .basket {
+      background:url("../images/accar/seen.png") no-repeat 100% 50%;
+      background-size:30px;
+	  cursor:pointer;
+	  padding-right:50px;
+	  line-height:50px;
+	  color:white;
+  }
+  
+  #header > .main > .bottom {
+      width:95%;
+      //border:1px solid red;
+      display:flex;
+      flex-flow:row nowrap;
+      margin:auto;
+      justify-content:space-around;
+  }
+  
+  #header > .main > .bottom > div {
+    padding:0 35px 0 10px;
+    font-size:12px;
+    text-align:right;
+    line-height:50px;
+    //border-right:1px solid #eee;
+    cursor:pointer;
+    white-space: nowrap;
+  }
+  /* #header > .main > .bottom > .section > a > .it1{
+    position: relative;
+    bottom: 20px;
+  } */
+  
+  
+  /*  menu  */
+  
+  #header > .main > .bottom > #menu {
+      
+      font-size:18px;
+      background:url("../images/accar/none.png") no-repeat 100% 50%;
+      background-size:30px;
+        color: #ccc;
+        position: absolute;
+        left: 410px;
+        top: -50px;
+  }
+  #header > .main > .bottom > #menu:hover > ul{
+      transition:0.5s;
+      opacity:1;
+	  visibility:visible;
+      top:52px;
+  }
+  #header > .main > .bottom > #menu > ul{
+      transition:0.1s;
+      padding:0;
+      margin:0;
+      list-style:none;
+      background:rgb(174, 128, 119);
+      border:1px solid #ccc;
+      position:absolute;
+      width:36%;
+      left: 90px;
+      top:82px;
+	  visibility:hidden;
+      opacity:0;
+	  height: 400%;
+	  z-index:20;
+	  
+  }
+  #header > .main > .bottom > #menu > ul > li:hover{
+      background-color:rgb(152, 94, 83);
+      /* border-left:5px solid red; */
+  }
+  #header > .main > .bottom > #menu > ul > li{
+    transition: 0.3s;
+      /* border-left:1px solid #ccc; */
+      padding-right:50px;
+        width: 120px;
+      font-size:13px;
+      background:url("../images/4.png") no-repeat 90% 50%;
+      background-size:20px;	
+      cursor:pointer;
+    background-color: rgb(174, 128, 119);
+    
+    
+  }
+  #header > .main > .bottom > #menu > ul > .it1{
+    position: relative;
+    right: 200px;
+    
+  }
+  #header > .main > .bottom > #menu > ul > .it2{
+    position: relative;
+    bottom: 50px;
+    right: 30px;
+  }
+  #header > .main > .bottom > #menu > ul > .it3{
+    position: relative;
+    right: 200px;
+    bottom: 50px;
+  }
+  #header > .main > .bottom > #menu > ul > .it4{
+    position: relative;
+    bottom: 100px;
+    right: 30px;
+  }
+  #header > .main > .bottom > #menu > ul > .it5{
+    position: relative;
+    right: 200px;
+    bottom:100px ;
+  }
+  #header > .main > .bottom > #menu > ul > .it6{
+    position: relative;
+    bottom: 150px;
+    right: 30px;
+  }
+  #header > .main > .bottom > #menu > ul > .it7{
+    position: relative;
+    right: 200px;
+    bottom: 150px;
+  }
+  #header > .main > .bottom > #menu > ul > .it8{
+    position: relative;
+   right: 30px;
+    bottom: 200px;
+  }
+  #header > .main > .bottom > #menu > ul > li:hover > ul{
+      display:block;
+  }
+  #header > .main > .bottom > #menu > ul > li > ul{
+      padding:0;
+      margin:0;
+      list-style:none;
+      background:#fff;
+      //border:1px solid red;
+      position:absolute;
+      width:calc(100% - 173px);
+      height:100%;
+      right:173px;
+      top:0px;
+      text-indent:20px;
+      display:none;
+  }
+  
+  
+  
+  #header > .main > .bottom > .section {
+    /* padding-right:35px; */
+      background:url("../images/accar/movie.png") no-repeat 100% 50%;
+      background-size:22px;
+      /* margin:15px 0; */
+      line-height:50px;
+      position:relative;
+      cursor:pointer;
+      /* overflow:hidden;	 */
+        color:#ccc;
+    }
+  #header > .main > .bottom > .section > a{
+      border-left:1px solid #ddd;
+      padding-left:10px;
+      text-decoration:none;
+      color:#ccc;
+  }
+  #header > .main > .bottom > .section::before{
+      transition:0.3s;
+      /* content:""; */
+      position:absolute;
+      bottom:0px;
+      right:0%;
+      width:0%;
+      height:5px;
+      /* background:orange; */
+      border-radius:50px;
+    display: none;
+    } 
+#header > .main > .bottom > .section:hover::before{
+      width:100%;
+  }
+  #header > .main > .bottom > .gap {
+      width:500px;
+  }
+  
+  
+/*  scroll  */
+
+#header > .main.mob{
+	border-bottom:3px solid orange;
+	position:fixed;
+	top:0;
+    background:#fff;
+	background:rgba(255,255,255,0.99);
+	//filter:blur(0.8px);
+	z-index:200;
+	width:100%;
+}
+
+@media screen and (max-width:1165px){
+
+  #header > .main > .bottom > #it3{
+
+    display: none;
+  }
+  #header > .main > .bottom > #it2{
+
+    display: none;
+  }
+  #header > .main > .bottom > #it4{
+
+    display: none;
+  }
+  #header > .main > .top > .search:before{
+    position: absolute;
+    left: 80px;
+
+  }
+
+}
+@media screen and (max-width:1105px){
+  #header > .main > .bottom > #it1{
+
+    display: none;
+  }
+  
+
+
+}
+@media screen and (max-width:1061px){
+
+  #header > .main > .bottom > #it5{
+    /* position: relative;
+    left: 290px; */
+
+  }
+
+}
+@media screen and (max-width:960px){
+
+  #header > .main > .top > .search:before{
+    position: absolute;
+    left: 60px;
+
+  }
+}
+@media screen and (max-width:915px){
+
+  #header > .main > .bottom > #it6{
+    position: relative;
+    right: -500px;
+
+  }
+
+}
+@media screen and (max-width:870px){
+
+  #header > .main > .bottom > #it6{
+    position: relative;
+    right: -450px;
+
+  }
+  /* #content > .main > .product{
+
+
+  } */
+  #content > .slider{
+    display: none;
+
+
+  }
+}
+@media screen and (max-width:830px){
+  #content > .main{
+
+    display: none;
+  }
+  #content > .side{
+
+    display: none;
+  }
+  #header > .main{
+    display: none;
+  }
+  body{
+
+    background:url(../images/Screenshot\ 2023-12-10\ 120636.png) no-repeat;
+    background-size: 400px;
+    background-position: bottom-center;
+    background-color: red;
+  }
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,13 @@
+#content > .main > .product {
+	display:flex;
+	flex-flow:row wrap;
+	justify-content:space-between;
+}
+#content > .main > .product > .items{
+	width:20%;
+	border-left:1px solid #eee;
+	text-align:center;
+}
+#content > .main > .product > .items > img{
+	height:100px;
+}

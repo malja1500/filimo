@@ -1,0 +1,152 @@
+﻿@font-face {
+    src: url("fonts/Yekan.ttf");
+    font-family: yek;
+}
+
+@font-face {
+    src: url("fonts/Mj flow.ttf");
+    font-family: mj;
+}
+
+ul#accardion {
+    transition:0.5s;
+    //width:350px;
+    // border: 1px solid #ddd;
+    // border-radius: 5px;
+    padding: 0px;
+    padding-bottom:20px;
+    //margin:100px auto;
+    margin: 0;
+    list-style: none;
+    background: #fff;
+    background-size: 50px;
+    // box-shadow: 0 0 10px 1px #ddd;
+    font-family: mj;
+    font-size: 17px;
+    direction: rtl;
+
+}
+
+    ul#accardion > li {
+        // background: #fff;
+        margin: 0px 10px 15px;
+        position:relative;
+		border:1px solid #ddd;
+		border-radius:5px;
+		padding:20px 10px;
+    }
+
+        ul#accardion > li > label {
+			cursor:pointer;
+            display: block;
+            background: url("../images/accar/up.png") no-repeat 10% center;
+            background-size: 20px;
+            color: #fff;
+            border-radius:5px  0 0 5px ;
+            padding: 3px 20px;
+            text-align: right;
+            font-family: yek;
+            font-size: 18px;
+            color: #777;
+        }
+
+
+        ul#accardion > li > .content {
+            overflow: hidden;
+            transition: 0.5s;
+            height: 0;
+        }
+
+        ul#accardion > li > input {
+            display: none;
+        }
+
+            ul#accardion > li > input:checked ~ .content {
+                height: 140px;
+                padding-top: 5px;
+            }
+
+            ul#accardion > li > input:checked + label {
+
+                background-size: 20px;
+                border-right:7px solid red;
+               // display:block;
+               // color: #fff;
+            }
+
+
+       /*  filters */
+	   
+	          ul#accardion > li > .content > input {
+				  display:none;
+			  }	  
+
+			  ul#accardion > li > .content >  input:checked + label {
+                  background-image: url("../images/accar/ch03.png") 				  
+			  }		  
+			  ul#accardion > li > .content > label:hover {
+                  background-image: url("../images/accar/ch03ho.png") 				  
+			  }
+			  ul#accardion > li > .content > label {
+				  font-family:sans;
+				  padding:15px 60px 15px 0;
+				  font-size:14px;
+				  display:block;
+                  background: url("../images/accar/ch03un.png") no-repeat 90% 50%;	
+				  background-size:	18px;			  
+				  cursor:pointer;
+			  }	 
+				ul#accardion > li > .content > input[type=range]::-webkit-slider-runnable-track {
+					  background:red;		
+					
+				}
+				ul#accardion > li > .content > input[type=range]::-moz-range-track {
+					  //background:red;		
+					
+				}			
+				input[type="range"]::-moz-range-thumb {
+				   border: none; /*Removes extra border that FF applies*/
+				   border-radius: 5px; /*Removes default border-radius that FF applies*/
+
+				   /*custom styles*/
+				   background-color:red;// #5cd5eb;
+				   height: 22px;
+				   width: 14px;
+				}
+			  ul#accardion > li > .content > input[type=range] {
+				  appearance: none;
+				  display:inline-block;
+				  //padding:10px 10px;	
+				  margin:15px auto;
+				  border:0px none;
+				  //border-right:5px solid blue;	
+				  text-align:center;	
+				  height:5px;
+				  background:#eee;	
+				  border-radius:10px;	
+				width:50%;
+			  }	  
+			  ul#accardion > li > .content > span{			
+				  font-family:sans;
+				  line-height:10px;
+				  position:relative;
+				  top:-13px;
+				  padding:0 5px;
+			  }
+			  ul#accardion > li > .content > output{
+				  margin:3px;
+				  text-align:center;
+				  color:red;
+				  display:block;
+						  
+			  }
+			  
+@media screen and (max-width:900px){
+	ul#accardion{
+		position:fixed;
+		right:0;
+		top:50px;
+		width:180px;
+
+	}
+}	
