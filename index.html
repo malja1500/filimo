@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> FILIMO </title>
+
+<link href="style/fonts.css" rel="stylesheet">
+<link href="style/header.css" rel="stylesheet">
+<link href="style/content.css" rel="stylesheet">
+<link href="style/accar.css" rel="stylesheet">
+
+
+</head>
+<body>
+
+<div id="header">
+	<div class="ad">  </div>
+	<div id="main" class="main">	
+		<div class="top">
+			<div class="logo"></div>
+			<div class="search">
+				<input id="search" type="text" placeholder="جستجو">
+			</div>
+			<div class="log"></div>
+			<div class="basket" onclick="showBasket()"> دیده شده ها</div>		  
+		</div>
+		<div class="bottom">
+
+				<div id="menu" style="position: absolute; top: -50px; left: 410px;">مجموعه ها
+				
+					<ul>
+						<li class="it1"> دختر کقش دوزکی
+							<!-- <ul> 
+								<li>   آیتم های لوازم خانگی </li>
+								<li>   </li>
+								<li>    </li>
+								<li>   </li>								
+							</ul> -->
+						</li>
+						<li class="it2"> اموزش زبان </li>				
+						<li class="it3"> انیمه</li>		
+						<li class="it4"> هندی</li>
+						<li class="it5"> جشنواره</li>				
+						<li class="it6"> موسیقی</li>		
+						<li class="it7"> باب اسفنجی
+							<!-- <ul> 
+								<li>   علیکم </li>
+								<li>   </li>
+								<li>    </li>
+								<li>   </li>								
+							</ul> -->
+						</li>
+						<li class="it8"> همه لیست ها</li>
+					</ul>
+				
+				
+				</div>
+				<div id="it1" class="section" style="position: relative; bottom: 50px; right: 100px;"><a class="it1" href="#sec1"> کودک</a></div>
+				<div id="it2" class="section" style="position: relative; bottom: 50px; left: 19px;"><a href="#sec2">خارجی</a></div>
+				<div id="it3" class="section" style="position: relative; bottom: 50px; left: 139px;"><a href="#sec3"> ایرانی</a></div>
+				<div id="it4" class="section" style="position: relative; bottom: 50px; left: 260px;"><a href="#sec4"> سریال</a></div>
+				<div id="it5" class="section" style="position: relative; bottom: 50px; left: 380px;"><a href="#sec5"> قیلم</a></div>
+				<div id="it6" class="section" style="position: relative; bottom: 50px; left: 500px;"> وحشی</div>		  
+
+			
+					
+			
+		</div>	
+	</div>
+</div>
+
+<div id="content">
+
+	<div class="slider"> 
+		<div class="slideshow-container" style="position: relative; bottom: 50px;">
+
+			<div class="mySlides fade">
+			  <img src="images/2.png" style="width: 1280px;">
+			</div>
+	  
+			<div class="mySlides fade">
+			  <img src="images/1.png" style="width: 1280px;">
+			</div>
+	  
+			<div class="mySlides fade">
+			  <img src="images/3.png" style="width: 1280px;">
+			</div>
+			<div class="mySlides fade">
+			  <img src="images/44.png" style="width: 1280px;">
+			</div>
+			<a class="prev" onclick="plusSlides(-1)" style="position: relative; right: 1159px; bottom: 85.7px;">❮</a>
+			<a class="next" onclick="plusSlides(1)" style="position: relative; right: 1197px; bottom: 85.7px;">❯</a>
+	  
+		  </div>
+		  <br>	
+	
+	</div>
+	<div class="main"> 
+	
+		<div class="set">
+			<div class="sort"> 
+				
+				
+				<input id="dateSort" type="radio" name="sortGroup" checked> 
+				<label for="dateSort"> فیلم های به روز خارج</label>				
+				
+				<input id="starSort" type="radio" name="sortGroup"> 
+				<label for="starSort"> معروف های خارج</label>						
+				
+			</div>
+			
+		
+			
+		</div>
+		<div id="grid" class="product">   
+		<!--	<div id="it1" class="items" onclick="showModal(1)">  
+				<img src="images/movie2">
+				<h2> عطر خوشبو  </h2>
+				<span class="price"> 26,000 ریال </span>
+				<span class="star">  </span>
+				<span class="stock"> 
+				
+				</span>		
+							
+			</div>
+			-->
+		</div>			
+		
+		
+	</div>
+	<div class="side"> 
+		
+<ul id="accardion" class="">
+    <li>
+        <input type="checkbox" id="c0" name="na"  checked>
+        <label for="c0">  <span class="tip"> سال ساخت</span></label>
+        <div class="content">
+
+			<output id="priFromOut">1900</output>
+			<span> از : </span>
+			<input type="range" id="priFrom" min="1900" max="2025" step="5" value="1900">
+			<output id="priToOut">2025</output>
+			<span> تا : </span>
+			<input type="range" id="priTo" min="1900" max="2025" step="5" value="2025">
+		
+        </div>
+
+    </li>
+    <li>
+        <input type="checkbox" id="c1" name="na" checked>
+        <label for="c1"><span class="tip"> نوع ژانر</span></label>
+        <div class="content">
+			
+			<input type="radio" id="cat1" name="ca">
+			<label for="cat1"> ترسناک</label>
+			
+			<input type="radio" id="cat2" name="ca">
+			<label for="cat2"> علمی تخیلی</label>	
+
+			<input type="radio" id="cat3" name="ca" checked>
+			<label for="cat3"> همه نوع</label>				
+        </div>
+
+    </li> 
+
+	</div>  
+</div>
+
+<div id="footer"> </div>
+ 
+<div id="modal" class="default">
+	<span id="closeBtn" onclick="closeModal()">  </span>
+	<div class="right"> 
+		<h2 id="nameInfo">  آیتم </h2>
+		<span id="addBtn" class="basket" >  tamasha movie free</span>
+		<div class="info"> ارزش دیدن<span id="existInfo"> 9/10</span>	</div>	
+		<div class="info"> نوع ژانر<span id="catInfo"> نامشخص</span>	</div>	
+		<div class="info"> سال ساخت<span id="priceInfo"> 2000 </span>	</div>	
+		<div class="info"> تاریخ اکراین<span id="dateInfo"> ?????????? </span>	</div>	
+		<p id="desInfo">  توضیحات </p>
+	</div>
+ 	<div class="left"> 
+		<img id="bigImg">
+		<div id="gal"> 
+		<!--	<img onmouseover="zoomPic(this.src)" src="images/product/01-1.jpg">
+			<img onmouseover="zoomPic(this.src)"  src="images/product/01-2.jpg">
+			<img onmouseover="zoomPic(this.src)"  src="images/product/01-3.jpg">
+			-->
+			
+		</div>
+	</div>
+
+</div>
+
+<div id="basketModal" class="hide">
+	<span id="backBtn" onclick="closeBasket()">  </span>
+    <h2> دیده شده ها</h2> 
+	<div id="basHolder" class="holder">
+		
+		<!-- <div class="items"> 
+			<img id="bigImg" src="images/movie1">
+			<span id="titleBas">  نام فیلم</span>
+			<span id="priceBas">2002</span>	
+			<span id="quantityBas">  2 عدد </span>		
+		</div>
+		<div class="items"> 
+			<img id="bigImg" src="images/movie3">
+			<span id="titleBas">  نام فیلم </span>
+			<span id="priceBas"> 2010</span>	
+			<span id="quantityBas">  2 عدد </span>		
+		</div>	
+		<div class="items"> 
+			<img id="bigImg" src="images/movie4">
+			<span id="titleBas">  نام فیلم </span>
+			<span id="priceBas"> 1930</span>	
+			<span id="quantityBas">  2 عدد </span>		
+		</div>
+		<div class="items"> 
+			<img id="bigImg" src="images/movie5">
+			<span id="titleBas">  نام فیلم </span>
+			<span id="priceBas"> 1965</span>	
+			<span id="quantityBas">  2 عدد </span>		
+		</div>		-->
+		
+		
+		</div>
+		<div class="holder">
+			<span id="pay"> yadavary</span>	
+			<span class="total">  kamtar film bebin gogoly</span>
+
+		</div>
+
+</div>
+
+
+ 
+ 
+<script>
+
+
+
+
+function closeBasket(){
+	basketModal.className = "hide";	
+}
+
+function showModal(pid){
+ 
+	modal.className = "show";
+	
+	curEl = products.find(el => {return el.id == pid });
+
+	addBtn.setAttribute("data-id",curEl.id);
+
+	bigImg.src = "images/product/" + curEl.pic[0];
+	nameInfo.innerHTML = curEl.fname;
+	catInfo.innerHTML = curEl.category;
+	priceInfo.innerHTML = curEl.price + "";
+	existInfo.innerHTML = curEl.stock;
+	desInfo.innerHTML = curEl.describe;    
+
+
+}
+
+function closeModal(){
+	modal.className = "hide";
+}
+
+
+
+//  dynamic generation
+
+		products = [{id:1,fname:"mard",category:"ترسناک",price:2010,star:2.5,stock:9/10,addDate:13980202,pic:["movie1.jpg"],describe:"in yeky az behtarin ha hast"},
+					{id:2,fname:"mard kochak",category:"ترسناک",price:1900,star:1.5,stock:8/10,offerTime:180000,addDate:13980302,pic:["movie2.jpg"],describe:"shoma bayad bebiny o hichy nagy"},
+					{id:3,fname:"kochak mard",category:"ترسناک",price:1910,star:3.5,stock:7/10,offerTime:172000,addDate:13980502,pic:["movie3.jpg"],describe:"chips nashe faramish"},
+					{id:4,fname:"nashenas",category:"ترسناک",price:2010,star:3.5,stock:0/10,offerTime:172000,addDate:13980502,pic:["movie4.jpg"],describe:"man chizy baray goftan nadaram dige"},					
+					{id:5,fname:"mardy dar marg",category:"ترسناک",price:2000,star:2.5,stock:9/10,offerTime:151520,addDate:13980502,pic:["movie5.jpg"],describe:"bebin o nazar bede"},
+					{id:6,fname:"kasy ke bod",category:"ترسناک",price:1990,star:2,stock:10/10,offerTime:151520,addDate:13990502,pic:["movie6.jpg"],describe:"delet miad nabiny ino?"},
+					{id:7,fname:"valy alan nist",category:"ترسناک",price:2005,star:2.5,stock:7/10,offerTime:180000,addDate:13990502,pic:["movie7.png"],describe:"man ke migam keik hastesh"},
+					{id:8,fname:"bad sinama",category:"نرسناک",price:2000,star:2,stock:6/10,offerTime:172000,addDate:13990702,pic:["movie8.jpg"],describe:"baray goftan time nist dash "},
+					{id:9,fname:"jazab",category:"ترسناک",price:2024,star:2.5,stock:3/10,offerTime:151520,addDate:13980502,pic:["movie9.jpg"],describe:"hayajan ro kontorol konya"},
+					{id:10,fname:"joonz",category:"ترسناک",price:2022,star:2.5,stock:3/10,offerTime:151520,addDate:13980502,pic:["movie10.jpg"],describe:"omidy dige be in donya nist"},
+					{id:11,fname:"boooooS",category:"ترسناک",price:2007,star:2,stock:0/10,offerTime:151520,addDate:13980502,pic:["movie11.jpg"],describe:"zendegy arzesh peida mikne bad didan in"},
+					{id:12,fname:"gogoly",category:"علمی تخیلی",price:2006,star:1.5,stock:5/10,offerTime:180000,addDate:13990202,pic:["movie12.jpg"],describe:"man ke hang kardam"},
+					{id:13,fname:"gojeh",category:"علمی تخیلی",price:2020,star:3.5,stock:6/10,offerTime:172000,addDate:13990502,pic:["movie13.jpeg"],describe:"!wow!"},
+					{id:14,fname:"chips",category:"علمی تخیلی",price:2001,star:1,stock:0/10,offerTime:172000,addDate:13990502,pic:["movie14.jpg"],describe:"divinam kard in yeky"},
+					{id:15,fname:"didany",category:"علمی تخیلی",price:2000,star:2.5,stock:9/10,offerTime:151520,addDate:13990702,pic:["movie15.jpg"],describe:"dam gaz nabodam ke shodammmmm"},
+					{id:16,fname:"marvel",category:"علمی تخیلی",price:2002,star:2,stock:10/10,offerTime:151520,addDate:13990902,pic:["movie16.jpg"],describe:"hichy dige arzesh nadare!!!"},
+					{id:17,fname:"donya",category:"علمی تخیلی",price:2003,star:2.5,stock:0/10,offerTime:180000,addDate:14000202,pic:["movie17.jpg"],describe:"man ke like daram zendegy ro"},
+					{id:18,fname:"mars",category:"علمی تخیلی",price:2025,star:3,stock:6/10,offerTime:172000,addDate:14000502,pic:["movie18.jpg"],describe:"emmmmmmmmmmmmmmmmmm..."},
+					{id:19,fname:"baba",category:"علمی تخیلی",price:1980,star:1,stock:2/10,offerTime:151520,addDate:14000702,pic:["movie19.jpg"],describe:"che gogoly"},
+					{id:20,fname:"digar hich",category:"علمی تخیلی",price:2010,star:2.5,stock:3/10,offerTime:151520,addDate:14000802,pic:["movie20.jpg"],describe:"lalalalalalalalalalalalalalalalalalalala"},
+					{id:21,fname:"kijayy",category:"ترسناک",price:2013,star:2.5,stock:2/10,offerTime:151520,addDate:14000802,pic:["movie21.jpg"],describe:"nazar dary? na! mitony aslan chyzy begy?????"},
+					{id:22,fname:"hichyy",category:"ترسناک",price:1970,star:5,stock:5/10,offerTime:180000,addDate:14020802,pic:["movie22.jpg"],describe:"omidy dige be in donya nist"},
+					{id:23,fname:"zamby",category:"ترسناک",price:1972,star:3.5,stock:1/10,offerTime:172000,addDate:14020802,pic:["movie23.jpg"],describe:"man chizy baray goftan nadaram dige"},
+					{id:24,fname:"iran",category:"ترسناک",price:2018,star:3.5,stock:1/10,offerTime:172000,addDate:14020802,pic:["movie24.jpg"],describe:"zendegy arzesh peida mikne bad didan in"},					
+					{id:25,fname:"lobnan",category:"ترسناک",price:1979,star:5,stock:9/10,offerTime:151520,addDate:14020802,pic:["movie25.jpg"],describe:"hichy dige arzesh nadare!!!"},
+					{id:26,fname:"amrika",category:"ترسناک",price:2009,star:2,stock:10/10,offerTime:151520,addDate:14010202,pic:["movie26.jpg"],describe:"man ke like daram zendegy ro"},
+					{id:27,fname:"divone",category:"ترسناک",price:1990,star:2.5,stock:7/10,offerTime:180000,addDate:14010402,pic:["movie27.jpg"],describe:"shoma bayad bebiny o hichy nagy"},
+					{id:28,fname:"parishan",category:"ترسناک",price:1900,star:3,stock:6/10,offerTime:172000,addDate:14010502,pic:["movie28.jpg"],describe:"in yeky az behtarin ha hast"},
+					{id:29,fname:"parande",category:"ترسناک",price:2021,star:2.5,stock:0/10,offerTime:151520,addDate:14010702,pic:["movie29.jpg"],describe:"hichy dige arzesh nadare!!!"},
+					{id:30,fname:"ab &&",category:"ترسناک",price:2020,star:4.5,stock:3/10,offerTime:151520,addDate:14010802,pic:["movie30.jpg"],describe:"man ke hang kardam"},
+					{id:31,fname:"atash &&",category:"علمی تخیلی",price:1905,star:2.5,stock:2/10,offerTime:151520,addDate:14010802,pic:["movie31.jpg"],describe:"man ke like daram zendegy ro"},
+					{id:32,fname:"ziba dar ",category:"علمی تخیلی",price:1910,star:1,stock:0/10,offerTime:180000,addDate:14010802,pic:["movie32.jpg"],describe:"man ke hang kardam"},
+					{id:33,fname:"chera rafty",category:"علمی تخیلی",price:2005,star:3.5,stock:2/10,offerTime:172000,addDate:14020202,pic:["movie33.jpg"],describe:"zendegy arzesh peida mikne bad didan in"},
+					{id:34,fname:"darmande",category:"علمی تخیلی",price:1930,star:3.5,stock:1/10,offerTime:172000,addDate:14020202,pic:["movie34.jpg"],describe:"in yeky az behtarin ha hast"},
+					{id:35,fname:"ahang dost",category:"علمی تخیلی",price:1950,star:3,stock:9/10,offerTime:151520,addDate:14020302,pic:["movie35.jpg"],describe:"man ke like daram zendegy ro"},
+					{id:36,fname:"dadasham",category:"علمی تخیلی",price:2000,star:2,stock:1/10,offerTime:151520,addDate:14020402,pic:["movie.webp"],describe:"hichy dige arzesh nadare!!!"},
+					{id:37,fname:"narooo",category:"علمی تخیلی",price:2005,star:2.5,stock:7/10,offerTime:180000,addDate:14020502,pic:["movie1.webp"],describe:"lalalalalalalalalalalalalalalalalalalala"},
+					{id:38,fname:"moon",category:"علمی تخیلی",price:2020,star:3,stock:6/10,offerTime:172000,addDate:14020602,pic:["movie2.webp"],describe:"man ke hang kardam"},
+					{id:39,fname:"boor",category:"علمی تخیلی",price:2024,star:5,stock:3/10,offerTime:151520,addDate:14020702,pic:["movie3.webp"],describe:"man ke like daram zendegy ro"},
+					{id:40,fname:"aftab",category:"علمی تخیلی",price:2024,star:2.5,stock:3/10,offerTime:151520,addDate:14020802,pic:["movie4.webp"],describe:"in yeky az behtarin ha hast"},
+					{id:41,fname:"mahy",category:"ترسناک",price:2024,star:2.5,stock:2/10,offerTime:151520,addDate:14030202,pic:["movie27.webp"],describe:"zendegy arzesh peida mikne bad didan in"},
+					{id:42,fname:"farnam",category:"ترسناک",price:1970,star:1.5,stock:3/10,offerTime:180000,addDate:14030202,pic:["movie3.jpg"],describe:"lalalalalalalalalalalalalalalalalalalala"},
+					{id:43,fname:"joonam",category:"ترسناک",price:2000,star:3.5,stock:1/10,offerTime:172000,addDate:14030302,pic:["movie1.jpg"],describe:"hichy dige arzesh nadare!!!"},
+					{id:44,fname:"divane",category:"ترسناک",price:2005,star:3.5,stock:1/10,offerTime:172000,addDate:14030502,pic:["movie12.jpg"],describe:"in yeky az behtarin ha hast"},					
+					{id:45,fname:"nadombe",category:"ترسناک",price:1900,star:2.5,stock:8/10,offerTime:151520,addDate:14030802,pic:["movie11.jpg"],describe:"zendegy arzesh peida mikne bad didan in"},]
+
+function deres_haken(jsonDataItem){
+
+          //alert(products[i].fname);
+
+          let it = document.createElement('div')
+          it.className = "items";
+		  	
+
+		//it.onclick = function(){showModal(dataItem.pic)}
+			
+		 it.addEventListener("click",function(){showModal(jsonDataItem.id)})
+	
+          let pic = document.createElement('img');
+          pic.src = "images/product/" + jsonDataItem.pic[0];
+
+          it.appendChild(pic);
+			
+          let fname = document.createElement('h2');
+          fname.innerHTML = jsonDataItem.fname;
+
+          let price = document.createElement('span');
+          price.className = "price";
+          price.innerHTML = jsonDataItem.price + " ";
+
+          let star = document.createElement('span');
+          star.className = "star";
+          star.style.width =  jsonDataItem.star * 18 + "px";
+
+          let stk = document.createElement('span');
+          stk.className = "stock";
+
+          let sp = document.createElement('span');
+          sp.style.width = jsonDataItem.stock + "%";
+          stk.appendChild(sp);
+		  
+          let tim = document.createElement('span'); 
+		  tim.className = "time";
+      
+
+          
+		
+			  
+          let des = document.createElement('p'); 
+          des.innerHTML = jsonDataItem.describe;
+			
+			
+          it.appendChild(fname);
+          it.appendChild(price);
+          it.appendChild(star);
+          it.appendChild(stk);
+          it.appendChild(tim);
+          it.appendChild(des);		  
+		  
+		  if(jsonDataItem.stock == 0){
+			// it.style.opacity = "0.5";
+			stk.innerHTML = "";
+			stk.style.background = "#fff";
+			tim.innerHTML = "";
+		  }
+		  
+		  return it;
+}
+
+function demas(jsonData,i){
+
+	el = deres_haken(jsonData[i]);	  
+   // el.onclick = function () { showModal(jsonData[i].pic) };
+
+    grid.appendChild(el);	
+}
+
+function fill_grid(jsonData){
+	grid.innerHTML = "";
+
+	for(let i=0; i<jsonData.length;i++){
+	  demas(jsonData,i);
+	}
+}
+
+
+fill_grid(products);
+
+
+//  filter
+
+priFrom.oninput = function() {
+    priFromOut.innerHTML = priFrom.value;
+	filter_data ()
+};
+
+priTo.oninput = function() {
+    priToOut.innerHTML = priTo.value;
+	filter_data ()	
+};
+
+cat1.onclick = function() {
+	filter_data ()	
+};
+cat2.onclick = function() {
+	filter_data ()	
+};
+cat3.onclick = function() {
+	filter_data ()	
+};
+
+dateSort.onclick = function() {
+	filter_data ()	
+};
+starSort.onclick = function() {
+	filter_data ()	
+};
+
+
+
+
+function filter_data (){
+	
+	
+	let allcat = true;
+	let catv1 = "";
+	let catv2 = "";
+
+	if(cat1.checked){
+		catv1 = "علمی تخیلی";
+		allcat = false;
+
+	}
+	else if(cat2.checked){
+		catv2 = "ترسناک";
+		allcat = false;
+	}
+
+	var filteredData = products.filter((el) => {
+										  return el.price <= priTo.value &&
+												 el.price >= priFrom.value &&
+										    	 el.fname.indexOf(search.value) != -1 &&
+												 (el.category == catv1 || el.category == catv2 || allcat)
+										});
+	
+
+	if(dateSort.checked){
+		filteredData = filteredData.sort((a,b)=> b.addDate - a.addDate);
+
+	}									
+								
+								
+	if(starSort.checked){
+		filteredData = filteredData.sort((a,b)=> b.star - a.star);
+
+	}									
+
+
+	fill_grid(filteredData);										
+}
+
+
+
+
+search.onkeyup = function(){
+	
+	//alert();
+	
+	var filteredData = products.filter((el) => {
+											  return el.fname.indexOf(search.value) != -1
+											});
+											
+	fill_grid(filteredData);	
+}
+
+
+/*    basket    */
+addBtn.addEventListener("click",function(){
+
+	cid = this.getAttribute("data-id"); 
+	
+	
+	let curEl = products.find(el => el.id == cid);
+	// alert(cid);
+
+	let bas = JSON.parse(localStorage.getItem("basket"));
+
+	if(!bas){
+		bas = [];
+
+	}
+	let elId = cid;
+	let elPic = curEl.pic[0];
+	let elPrice = curEl.price;
+	let elName = curEl.fname;
+	let elQuantity = 1;
+
+	basIndex = bas.findIndex(el => el.elId == cid);
+	if(basIndex != -1){
+		bas[basIndex].elQuantity++;
+
+	}
+	else{
+	bas.push({elId,elPic,elPrice,elName,elQuantity});
+}
+	localStorage.setItem("basket",JSON.stringify(bas));
+
+});
+
+function showBasket(){
+	basketModal.className = "show";
+
+	bas = JSON.parse(localStorage.getItem("basket"));
+
+	basHolder.innerHTML = "";
+
+	// alert(bas.length);
+	for(el of bas){
+
+		it = document.createElement("div");
+		it.className = "items";
+
+		im = document.createElement("img");
+		im.src = "images/product/" + el.elPic;
+		
+		nam = document.createElement("span");
+		nam.innerHTML = el.elName;
+	
+		pr = document.createElement("span");
+		pr.innerHTML = el.elPrice + "";
+		
+		quan = document.createElement("span");
+		quan.innerHTML = el.elQuantity;
+
+		it.appendChild(im);
+		it.appendChild(nam);
+		it.appendChild(pr);
+		it.appendChild(quan);
+
+
+		basHolder.appendChild(it);
+	}
+}
+
+
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+  
+</script>
+
+
+</body>
+</html>
+
+
